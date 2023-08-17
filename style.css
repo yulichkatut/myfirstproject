@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@600&display=swap');
+
+:root {
+    --title-font: 'Playfair Display', serif;
+    --text-font: 'Poppins', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f9ecd6;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* header */
+
+.container {
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #B1D5D7;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    margin-top: 20px;
+
+}
+
+.nav__item {
+    font-family: var(--text-font);
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: lowercase;
+}
+
+
+@media (max-width: 767px) {
+    .nav__list {
+        flex-direction: column;
+        /* Размещаем элементы вертикально */
+        align-items: center;
+        /* Выравниваем по центру */
+        margin-top: 10px;
+        /* Меньший отступ сверху */
+    }
+
+    .nav__item {
+        font-size: 16px;
+        /* Уменьшает размер шрифта */
+        margin-bottom: 10px;
+        /* Добавляет отступ между пунктами меню */
+    }
+}
+
+/* about */
+.about {
+    text-align: center;
+    background-image: url(img/imgmain.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+.about__container {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.about__data {
+    color: #fff;
+    font-family: var(--title-font);
+}
+
+.about__title {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.about__text {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.about__social {
+    color: #fff;
+}
+
+.about__social i {
+    background-color: #B1D5D7;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 45px;
+    margin-right: 20px;
+}
+
+/* Медиазапрос для устройств с шириной до 767px */
+@media (max-width: 767px) {
+    .about__container {
+        top: 80%;
+        transform: translate(-50%, -50%);
+    }
+
+    .about__title {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .about__text {
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+
+    .about__social i {
+        font-size: 25px;
+        margin-right: 15px;
+    }
+}
+
+
+/* menu*/
+
+.menu__title {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-family: var(--title-font);
+    color: #B1D5D7;
+    font-size: 35px;
+}
+
+.menu__container {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.menu__card {
+    width: 330px;
+    text-align: center;
+    background-color: #ffe2b4;
+    padding: 8px 8px 34px;
+    border-radius: 16px;
+    margin: 0 auto;
+    transition: .4s;
+    margin-bottom: 40px;
+    box-shadow: 7px 7px 7px #edd090;
+}
+
+.menu__img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.menu__subtitle {
+    margin: 10px 0;
+    font-family: var(--text-font);
+    font-weight: 500;
+    font-size: 20px;
+    color: #639E9C;
+}
+
+.menu__text {
+    font-size: 18px;
+    font-family: var(--text-font);
+    font-weight: 500;
+    color: #639E9C;
+}
+
+/* Медиазапрос для устройств с шириной до 767px */
+@media (max-width: 767px) {
+    .menu__container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* специальное предложение */
+
+.special {
+    text-align: center;
+    background-image: url(img/pattern.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    box-shadow: 7px 7px 7px #a1c1bf;
+    margin-bottom: 40px;
+}
+
+.special__title {
+    margin-top: 40px;
+    font-family: var(--title-font);
+    color: #edd090;
+    font-size: 35px;
+}
+
+.special__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.special__review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B1D5D7;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 7px #a1c1bf;
+    margin-top: 20px;
+}
+
+.special__data {
+    padding: 5px;
+    text-align: center;
+    font-family: var(--text-font);
+    font-size: 20px;
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .special__container {
+        flex-direction: column;
+    }
+
+    .special__title {
+        font-size: 25px;
+    }
+
+    .special__data {
+        font-size: 15px;
+    }
+
+    .special__review {
+        width: 90%;
+        height: 130px;
+    }
+
+}
+
+
+/* reviews */
+
+.reviews__title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #B1D5D7;
+}
+
+.review__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.review {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #B1D5D7;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px;
+    font-family: var(--text-font);
+    font-weight: 500;
+    color: #fff;
+}
+
+.review__img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.review__text {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.review__author {
+    font-style: italic;
+}
+
+
+.review p:last-child {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+@media (max-width: 767px) {
+
+    .review__container {
+        flex-direction: column;
+    }
+
+}
+
+/* book */
+#book {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+#book h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #639E9C;
+    font-family: var(--title-font);
+}
+
+
+#booking-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+ 
+}
+
+#booking-form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #639E9C;
+}
+
+#booking-form input[type="text"],
+#booking-form input[type="email"],
+#booking-form input[type="date"],
+#booking-form input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #639E9C;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#booking-form button[type="submit"] {
+    background-color: #639E9C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#booking-form button[type="submit"]:hover {
+    background-color: #a1c1bf;
+}
+
+@media (max-width: 767px) {
+    #booking-form {
+        max-width: 100%;
+        border-radius: 0; /* Убираем скругление границы на маленьких экранах */
+        box-shadow: none; /* Убираем тень на маленьких экранах */
+        padding: 15px; /* Меньший внутренний отступ */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="time"] {
+        margin-bottom: 10px; /* Уменьшаем отступ между полями */
+    }
+}
+
+button[type="submit"] {
+    background-color: #639E9C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #a1c1bf;
+}
+
+/* contact */
+
+.contact {
+    text-align: center;
+    background-color: #ffe2b4;
+    padding: 80px 0;
+}
+
+.contact__title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #639E9C;
+    font-family: var(--title-font);
+}
+
+.contact__text {
+    font-size: 18px;
+    color: #000;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact__link {
+    color: #639E9C;
+}
+
+/* footer */
+footer {
+    background-color: #639E9C;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

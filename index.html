@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boxicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Coffemania</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <ul class="nav__list">
+                <li><a href="#about" class="nav__item">О нас</a></li>
+                <li><a href="#menu" class="nav__item">Меню</a></li>
+                <li><a href="#special" class="nav__item">Специальные предложения</a></li>
+                <li><a href="#reviews" class="nav__item">Отзывы</a></li>
+                <li><a href="#book" class="nav__item">Забронировать</a></li>
+                <li><a href="#contact" class="nav__item">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- about -->
+    <section id="about" class="about">
+        <div class="about__container ">
+            <div class="about__data">
+                <h1 class="about__title">Добро пожаловать в "Coffeemania"</h1>
+                <p class="about__text">Добро пожаловать в уютное пространство, где аромат свежесваренного кофе сливается
+                    с
+                    теплой атмосферой и
+                    гостеприимством. Наша кофейня - это не просто место, где можно насладиться чашечкой кофе, это
+                    настоящая
+                    история о страсти к аромату, вдохновению и вкусовым открытиям.</p>
+            </div>
+
+            <div class="about__social">
+                <a href="https://vk.com/" target="_blank"><i class='bx bxl-vk'></i></a>
+                <a href="https://telegram.org/?setln=ru" target="_blank"><i class='bx bxl-telegram'></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- menu -->
+    <section id="menu" class="menu">
+        <h2 class="menu__title">Наше меню</h2>
+        <div class="menu__container container">
+            <article class="menu__card">
+                <img src="img/menu1.jpg" class="menu__img" alt="Блюдо 1">
+                <h3 class="menu__subtitle">Эспрессо</h3>
+                <p class="menu__text">60 руб.</p>
+            </article>
+            <article class="menu__card">
+                <img src="img/menu2.jpg" class="menu__img" alt="Блюдо 2">
+                <h3 class="menu__subtitle">Американо</h3>
+                <p class="menu__text">80 руб.</p>
+            </article>
+            <article class="menu__card">
+                <img src="img/menu3.jpg" class="menu__img" alt="Блюдо 3">
+                <h3 class="menu__subtitle">Капучино</h3>
+                <p class="menu__text">110 руб.</p>
+            </article>
+            <article class="menu__card">
+                <img src="img/menu4.jpg" class="menu__img" alt="Блюдо 4">
+                <h3 class="menu__subtitle">Сэндвич с тунцом</h3>
+                <p class="menu__text">150 руб.</p>
+            </article>
+            <article class="menu__card">
+                <img src="img/menu5.jpg" class="menu__img" alt="Блюдо 5">
+                <h3 class="menu__subtitle">Круассан</h3>
+                <p class="menu__text">80 руб.</p>
+            </article>
+            <article class="menu__card">
+                <img src="img/menu6.jpg" class="menu__img" alt="Блюдо 6">
+                <h3 class="menu__subtitle">Макарун</h3>
+                <p class="menu__text">150 руб.</p>
+            </article>
+
+        </div>
+        </div>
+
+
+
+    </section>
+    <!-- special -->
+    <section id="special" class="special">
+        <h2 class="special__title">Специальные предложения</h2>
+
+        <div class="special__container container">
+            <div class="special__review">
+                <div class="special__data">
+                    <h3 class="special__subtitle">Скидка для школьников и студентов</h3>
+                    <p class="special__text">Скидка 20% действует с 12:00 до 16:00</p>
+                </div>
+            </div>
+            <div class="special__review">
+                <div class="special__data">
+                    <h3 class="special__subtitle">Бизнес-ланч</h3>
+                    <p class="special__text">Быстрый и вкусный обед для занятых людей.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- reviews -->
+    <section id="reviews" class="reviews">
+        <h2 class="reviews__title">Отзывы клиентов</h2>
+        <div class="review__container container">
+            <div class="review">
+                <p class="reviews__text">Восхитительное место! Блюда превосходные, обслуживание на высшем уровне.</p>
+                <img class="review__img" src="img/Анна.jpg" alt="Анна">
+                <p class="review__author">- Анна</p>
+            </div>
+            <div class="review">
+                <p class="reviews__text">Никогда не пробовал такие вкусные десерты! Обязательно приду ещё.</p>
+                <img class="review__img" src="img/Иван.jpg" alt="Иван">
+                <p class="review__author">- Иван</p>
+            </div>
+            <div class="review">
+                <p class="reviews__text">Замечательное, уютная кофейня! Вкусный кофе по низким ценам!</p>
+                <img class="review__img" src="img/Алексей.jpg" alt="Алексей">
+                <p class="review__author">- Алексей</p>
+            </div>
+        </div>
+    </section>
+    <!-- booking -->
+    <section id="book" class="section">
+        <h2>Забронировать столик</h2>
+            <form id="booking-form" action="#" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required placeholder="Введите Ваше имя">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Введите Ваш email">
+
+        
+                <label for="date">Дата:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Время:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Забронировать</button>
+        </form>
+    </section>
+    <!-- contact -->
+    <section id="contact" class="contact">
+        <h2 class="contact__title">Наши контакты</h2>
+        <p class="contact__text">Вы всегда можете связаться с нами по номеру телефона:
+            <a href="tel:+1234567890" class="contact__link">+1234567890</a> или по
+            электронной почте:
+            <a href="mailto:info@coffeemania.com" class="contact__link">info@coffeemania.com</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 made by niki. </p>
+    </footer>
+</body>
+
+</html>
