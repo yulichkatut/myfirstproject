@@ -374,6 +374,7 @@ a {
     border: 3px solid #639E9C;
     border-radius: 8px;
     font-size: 16px;
+    background-color:fff;
 }
 
 #booking-form input[type="date"],
@@ -414,7 +415,8 @@ a {
     }
     input[type="date"],
     input[type="time"] {
-        padding-right: 30px; /* Добавляем дополнительное пространство для стрелок */
+        padding-right: 10px; /* Добавляем дополнительное пространство для стрелок */
+        padding-left: 10px;
         background-color: white; /* Стилизуем фон для совместимости */
         background-image: none; /* Убираем фоновое изображение, которое может мешать */
     }
