@@ -412,7 +412,15 @@ a {
     input[type="time"] {
         margin-bottom: 10px; /* Уменьшаем отступ между полями */
     }
+    input[type="date"],
+    input[type="time"] {
+        padding-right: 30px; /* Добавляем дополнительное пространство для стрелок */
+        background-color: white; /* Стилизуем фон для совместимости */
+        background-image: none; /* Убираем фоновое изображение, которое может мешать */
+    }
 }
+
+
 
 button[type="submit"] {
     background-color: #639E9C;
