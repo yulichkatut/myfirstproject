@@ -368,7 +368,7 @@ a {
 #booking-form input[type="email"],
 #booking-form input[type="date"],
 #booking-form input[type="time"] {
-    width: 100%;
+    width: 400px;
     padding: 10px;
     margin-bottom: 20px;
     border: 3px solid #639E9C;
