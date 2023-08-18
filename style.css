@@ -376,6 +376,13 @@ a {
     font-size: 16px;
 }
 
+#booking-form input[type="date"],
+#booking-form input[type="time"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 #booking-form button[type="submit"] {
     background-color: #639E9C;
     color: white;
